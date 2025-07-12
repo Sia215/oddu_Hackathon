@@ -1,3 +1,10 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <limits>
+#include <regex>
+using namespace std;
+
 int main() {
     UserManager userManager;
     SwapManager swapManager;
