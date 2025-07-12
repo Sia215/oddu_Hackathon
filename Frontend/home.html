@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Swap - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Skill Swap Platform</div>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="profile.html">My Profile</a> <!-- Added link to profile -->
+    </nav>
+  </header>
+
+  <section class="filters">
+    <select id="availabilityFilter" class="rounded-md">
+      <option value="">All Availability</option>
+      <option value="Weekends">Weekends</option>
+      <option value="Weekdays">Weekdays</option>
+      <option value="Evenings">Evenings</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Search skills or name" class="rounded-md">
+    <button id="searchBtn" class="rounded-md">Search</button>
+    <button id="addProfileBtn" class="rounded-md">Add New Profile</button> <!-- Button to add new profile -->
+  </section>
+
+  <section class="user-cards" id="userCards">
+    <!-- User cards will be dynamically inserted here -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
