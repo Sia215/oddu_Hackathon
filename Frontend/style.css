@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Changed font to Inter */
+  background: #f4f6f8;
+  color: #000000;
+}
+
+.main-header {
+  background-color: #31245c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: white;
+  background: #6c5ce7;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease; /* Smooth transition for hover */
+}
+
+nav a:hover {
+  background: #1005b4;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem; /* Space between login and register forms */
+}
+
+.login-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex; /* Use flexbox for form elements */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.login-form input,
+.login-form select,
+.login-form textarea { /* Added textarea to styling */
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.6rem;
+  background: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #a29bfe;
+}
+
+.login-form .forgot,
+.login-form .register-link,
+.login-form .login-link { /* Combined link styles */
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap; /* Allow filters to wrap on smaller screens */
+  gap: 1rem;
+  background: white;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.filters input, .filters select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1; /* Allow inputs to grow */
+  min-width: 150px; /* Minimum width for inputs */
+}
+
+.filters button {
+  padding: 0.6rem 1rem;
+  background: #4B3F72; /* Darker button for filters */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filters button:hover {
+  background: #6c5ce7;
+}
+
+.user-cards {
+  padding: 1rem 2rem;
+  display: grid; /* Use grid for user cards */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between cards */
+}
+
+.card {
+  display: flex;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  align-items: center;
+  transition: transform 0.2s ease; /* Hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img.profile-img {
+  width: 80px; /* Increased image size */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #6c5ce7; /* Added border to image */
+}
+
+.card .user-details {
+  flex: 1;
+}
+
+.card .user-details h3 {
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  color: #4B3F72;
+}
+
+.card .user-details p {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card .skills {
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.card .skills span {
+  background: #e0e0e0;
+  padding: 4px 8px;
+  margin-right: 5px;
+  margin-bottom: 5px; /* For wrapping skills */
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: inline-block; /* Allows margin-bottom to work */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.card-footer .rating {
+  font-weight: bold;
+  color: #f39c12; /* Star color */
+}
+
+.request-btn {
+  background: #6c5ce7;
+  color: white;
+  padding: 0.6rem 1rem; /* Increased padding */
+  border: none;
+  border-radius: 5px; /* Slightly larger border-radius */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.request-btn:hover {
+  background: #a29bfe;
+}
+
+.profile-box {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 2rem;
+  padding: 2rem;
+  background: white;
+  margin: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.profile-box input,
+.profile-box select,
+.profile-box textarea {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.profile-box .profile-right {
+  flex: 1;
+  min-width: 250px; /* Minimum width for right column */
+  text-align: center;
+}
+
+.profile-box .profile-img {
+  width: 120px; /* Larger profile image */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #2f40a0; /* Stronger border */
+}
+
+.profile-box .profile-left {
+  flex: 2;
+  min-width: 300px; /* Minimum width for left column */
+}
+
+.profile-box button {
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+.profile-box button.save {
+  background-color: #2ecc71;
+}
+
+.profile-box button.save:hover {
+  background-color: #27ae60;
+}
+
+.profile-box button.discard {
+  background-color: #e74c3c;
+}
+
+.profile-box button.discard:hover {
+  background-color: #c0392b;
+}
+
+/* Styles for request list in profile */
+#requestList {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem;
+}
+
+#requestList h3 {
+  color: #4B3F72;
+  margin-bottom: 1rem;
+}
+
+#requestList > div { /* Each request item */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#requestList > div p {
+  margin: 0.2rem 0;
+}
+
+#requestList > div button {
+  padding: 0.5rem 0.8rem;
+  margin-right: 0.5rem;
+  margin-top: 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+#requestList > div button:first-of-type { /* Accept button */
+  background-color: #28a745;
+}
+#requestList > div button:first-of-type:hover {
+  background-color: #218838;
+}
+
+#requestList > div button:last-of-type { /* Reject button */
+  background-color: #dc3545;
+}
+#requestList > div button:last-of-type:hover {
+  background-color: #c82333;
+}
+
+#requestList span {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .main-header nav {
+    margin-top: 1rem;
+  }
+  .main-header nav a {
+    margin: 0 0.5rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1rem;
+  }
+  .filters input, .filters select, .filters button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .login-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-box {
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  .profile-box .profile-right {
+    order: -1; /* Move image to top on mobile */
+  }
+  .profile-box .profile-img {
+    margin-top: 0;
+  }
+}
